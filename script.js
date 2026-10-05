@@ -45,3 +45,43 @@ if (revealEls.length && 'IntersectionObserver' in window) {
   // no IntersectionObserver support: just show everything
   revealEls.forEach((el) => el.classList.add('in'));
 }
+
+// Count-up animation for the stats strip
+const statNums = document.querySelectorAll('.stat-num[data-count]');
+const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function animateCount(el) {
+  const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+  if (reducedMotion) {
+    el.textContent = target;
+    return;
+  }
+  const duration = 1100;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(target * eased);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+if (statNums.length) {
+  if ('IntersectionObserver' in window) {
+    const statIo = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            statIo.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    statNums.forEach((el) => statIo.observe(el));
+  } else {
+    statNums.forEach((el) => animateCount(el));
+  }
+}

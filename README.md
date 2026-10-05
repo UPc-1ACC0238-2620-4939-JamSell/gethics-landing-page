@@ -43,8 +43,32 @@ git push origin main
 
 En ~30 segundos Vercel actualiza tu URL automáticamente.
 
+## v4 — fotos reales (las que mandaste)
+
+- Tarjeta **Ganaderos**: foto real de un ganadero con su hato en el campo.
+- Tarjeta **Veterinarios**: foto real de un veterinario atendiendo a un ternero.
+- Nueva franja **"Pensado desde el campo real"**: foto panorámica de hato + montañas, de fondo completo.
+- Sección **Equipo**: las 5 fotos reales de ustedes, reemplazando los círculos con iniciales — esta sí es honesta al 100%, porque es literalmente el equipo.
+- Las citas de "problema validado" se mantienen con ícono de rol (no foto), por la misma razón de siempre: nadie validó Gethics todavía.
+
+## v3 — nivel "pro" (imágenes, tarjetas, dinamismo)
+
+No usamos fotos de stock ni fotos generadas por IA de personas, por dos razones prácticas y una ética:
+
+- Este entorno no tiene acceso a bancos de imágenes (Unsplash, Pexels, Wikimedia, etc. están bloqueados por política de red del sandbox), y la búsqueda de imágenes no me devuelve URLs usables para incrustar en el sitio.
+- Aunque las consiguiera, poner una foto de una persona real (de stock o generada) junto a las citas de "problema validado" implicaría que esa persona específica ya usó/opinó sobre Gethics — y las entrevistas de validación (4.3.1) todavía no se han hecho. Eso rompe la misma honestidad que ya aplicamos al reformular testimonios y precios.
+
+En su lugar, el nivel "pro" se logró con más contenido ilustrado (HTML/CSS/SVG, cero imágenes externas):
+
+- **Mockup de app ilustrado:** el placeholder de texto en el Hero ahora es una pantalla de app dibujada en CSS (lista de animales con estado de color), igual que la propuesta visual ya mostrada en Figma 3.1.3.2.
+- **Sección "Así se ve Gethics":** 3 teléfonos ilustrados (Inventario, Calendario, Alertas) a modo de showcase del producto.
+- **Franja de cifras animadas:** 4 datos reales del informe (Cap. 1 y 2) con animación de conteo al hacer scroll.
+- **Comparación "Hoy, sin Gethics" vs "Con Gethics":** tarjetas lado a lado con los mismos dolores reales de las entrevistas (cuaderno, doble digitación, historial no disponible) vs. el beneficio correspondiente.
+- **Ícono-avatar por testimonio:** un ícono de rol (no una foto ni un nombre) en cada cita, para dar más peso visual sin fingir una identidad.
+- Polish adicional: patrón de puntos decorativo, más profundidad en las tarjetas (hover + ícono que cambia de color), fondo degradado en la franja de cifras.
+
 ## Pendiente para antes de la entrega final
 
-- El bloque "Mockup de la app (pantalla real)" dentro del Hero es un placeholder intencional: se reemplaza por una captura real de la app cuando los mock-ups de pantallas móviles (3.1.4) estén listos.
+- El mockup de app en el Hero y en "Así se ve Gethics" es una ilustración (no una captura real): se puede reemplazar por capturas reales cuando los mock-ups de pantallas móviles (3.1.4) estén listos y la app tenga una build navegable.
 - Los montos del modelo de negocio están pendientes de definición (mencionado explícitamente en la sección, no se inventó ningún número).
 - Los links de Términos y Privacidad en el footer siguen sin una página real detrás — quedan como placeholders hasta que el equipo decida si los necesita para esta entrega.
