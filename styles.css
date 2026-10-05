@@ -62,11 +62,11 @@ svg{display:block;}
   background:rgba(251,244,236,.92); backdrop-filter:blur(8px);
   box-shadow:0 4px 24px rgba(114,42,46,.08);
 }
-.nav{display:flex; align-items:center; justify-content:space-between; padding:18px 48px; gap:24px;}
-.logo{font-weight:700; font-size:18px; color:#fff; text-decoration:none; display:flex; align-items:center; gap:10px; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:22px 48px; gap:32px;}
+.logo{font-weight:700; font-size:22px; color:#fff; text-decoration:none; display:flex; align-items:center; gap:10px; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
 .scrolled .logo{color:var(--primary); text-shadow:none;}
-.logo-mark{width:30px; height:30px; object-fit:contain; border-radius:7px;}
-.navlinks{display:flex; gap:30px; font-weight:500; font-size:14px;}
+.logo-mark{width:36px; height:36px; object-fit:contain; border-radius:8px;}
+.navlinks{display:flex; gap:38px; font-weight:600; font-size:16px;}
 .navlinks a{text-decoration:none; position:relative; padding:4px 0; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
 .scrolled .navlinks a{color:var(--dark); text-shadow:none;}
 .navlinks a::after{content:""; position:absolute; left:0; bottom:-2px; width:0; height:2px; background:currentColor; transition:width .25s var(--ease);}
