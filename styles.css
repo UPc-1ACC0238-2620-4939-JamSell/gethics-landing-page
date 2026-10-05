@@ -9,6 +9,7 @@
   --cream:#FBF4EC;
   --alert-bg:#FFF4E0;
   --alert-tx:#BB7B1C;
+  --gray-card:#EFEDEA;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -163,11 +164,11 @@ svg{display:block;}
 
 /* ---------- Testimonial avatar ---------- */
 .testi-avatar{
-  width:44px; height:44px; border-radius:50%; background:var(--white);
-  color:var(--primary); display:flex; align-items:center; justify-content:center;
-  margin-bottom:14px; box-shadow:0 4px 10px rgba(114,42,46,.1);
+  width:64px; height:64px; border-radius:50%; background:var(--white);
+  overflow:hidden; margin:0 auto 14px; box-shadow:0 4px 10px rgba(0,0,0,.1);
+  border:3px solid var(--white);
 }
-.testi-avatar svg{width:22px; height:22px;}
+.testi-avatar img{width:100%; height:100%; object-fit:cover; display:block;}
 
 /* ---------- Sections ---------- */
 section{padding:84px 0;}
@@ -212,20 +213,20 @@ section{padding:84px 0;}
 .segment-list li::before{content:"✓"; position:absolute; left:0; color:var(--primary); font-weight:700;}
 
 /* ---------- Field banner (foto real) ---------- */
-.field-banner{position:relative; height:280px; overflow:hidden;}
-.field-banner img{width:100%; height:100%; object-fit:cover; display:block;}
+.field-banner{position:relative; height:360px; overflow:hidden;}
+.field-banner img{width:100%; height:100%; object-fit:cover; object-position:center 72%; display:block;}
 .field-banner-overlay{
   position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(180deg, rgba(30,30,30,.1) 0%, rgba(30,30,30,.55) 100%);
+  background:linear-gradient(180deg, rgba(30,30,30,.15) 0%, rgba(30,30,30,.6) 100%);
   text-align:center; padding:24px;
 }
-.field-banner-overlay p{color:var(--white); font-size:22px; font-weight:700; max-width:560px; text-shadow:0 2px 12px rgba(0,0,0,.3);}
+.field-banner-overlay p{color:var(--white); font-size:34px; font-weight:900; letter-spacing:-.3px; line-height:1.25; max-width:680px; text-shadow:0 2px 16px rgba(0,0,0,.35);}
 
 /* ---------- Problema validado ---------- */
 .testi-row{display:flex; gap:24px;}
-.testi{flex:1; background:var(--surface); border-radius:22px; padding:28px; list-style:none; transition:transform .3s var(--ease);}
+.testi{flex:1; background:var(--gray-card); border-radius:22px; padding:28px; list-style:none; text-align:center; transition:transform .3s var(--ease);}
 .testi:hover{transform:translateY(-4px);}
-.testi p{font-size:14px; margin-bottom:14px; line-height:1.5;}
+.testi p{font-size:14px; margin-bottom:14px; line-height:1.5; text-align:left;}
 .testi cite{font-size:12px; font-weight:700; color:var(--primary); font-style:normal;}
 .research-note{text-align:center; max-width:640px; margin:36px auto 0; font-size:12.5px; color:var(--sec); line-height:1.6;}
 
@@ -327,8 +328,8 @@ footer{padding:56px 0 40px; background:var(--white);}
   section{padding:56px 0;}
   .head h2{font-size:26px;}
   .grid{grid-template-columns:1fr; gap:14px;}
-  .field-banner{height:180px;}
-  .field-banner-overlay p{font-size:17px;}
+  .field-banner{height:240px;}
+  .field-banner-overlay p{font-size:22px;}
   .avatar-photo{width:60px; height:60px;}
   .how-row, .testi-row{flex-direction:column; gap:14px;}
   .compare-row{gap:14px;}
