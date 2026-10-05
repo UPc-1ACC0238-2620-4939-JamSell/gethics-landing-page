@@ -67,11 +67,17 @@ svg{display:block;}
 .menu-toggle span{display:block; width:20px; height:2px; background:var(--dark); border-radius:1px; transition:transform .2s ease, opacity .2s ease;}
 
 /* ---------- Hero ---------- */
-.hero{padding:40px 0 90px;}
+.hero{
+  padding:64px 0 120px;
+  background-image:linear-gradient(180deg, rgba(251,244,236,.35) 0%, rgba(251,244,236,.55) 55%, var(--cream) 100%), url('assets/hato-paisaje.jpg');
+  background-size:cover;
+  background-position:center 70%;
+  background-repeat:no-repeat;
+}
 .hero-card{
   background:var(--white); border-radius:32px; padding:64px;
   display:flex; align-items:center; gap:56px;
-  box-shadow:0 20px 50px rgba(114,42,46,.08);
+  box-shadow:0 24px 60px rgba(30,20,10,.18);
 }
 .eyebrow{display:inline-block; background:var(--surface); color:var(--primary); font-size:12px; font-weight:700; padding:7px 14px; border-radius:20px; margin-bottom:18px;}
 .hero-text{flex:1;}
@@ -212,16 +218,6 @@ section{padding:84px 0;}
 .segment-list li{font-size:13.5px; padding-left:22px; position:relative; color:var(--dark);}
 .segment-list li::before{content:"✓"; position:absolute; left:0; color:var(--primary); font-weight:700;}
 
-/* ---------- Field banner (foto real) ---------- */
-.field-banner{position:relative; height:360px; overflow:hidden;}
-.field-banner img{width:100%; height:100%; object-fit:cover; object-position:center 72%; display:block;}
-.field-banner-overlay{
-  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(180deg, rgba(30,30,30,.15) 0%, rgba(30,30,30,.6) 100%);
-  text-align:center; padding:24px;
-}
-.field-banner-overlay p{color:var(--white); font-size:34px; font-weight:900; letter-spacing:-.3px; line-height:1.25; max-width:680px; text-shadow:0 2px 16px rgba(0,0,0,.35);}
-
 /* ---------- Problema validado ---------- */
 .testi-row{display:flex; gap:24px;}
 .testi{flex:1; background:var(--gray-card); border-radius:22px; padding:28px; list-style:none; text-align:center; transition:transform .3s var(--ease);}
@@ -311,7 +307,7 @@ footer{padding:56px 0 40px; background:var(--white);}
   .nav-cta{display:none;}
   .menu-toggle{display:flex;}
 
-  .hero{padding:16px 0 56px;}
+  .hero{padding:28px 0 64px; background-position:center 75%;}
   .hero-card{flex-direction:column; padding:32px 24px; border-radius:28px; gap:24px;}
   .hero-text h1{font-size:32px; letter-spacing:-.3px;}
   .hero-text p{font-size:14px; max-width:none;}
@@ -328,8 +324,6 @@ footer{padding:56px 0 40px; background:var(--white);}
   section{padding:56px 0;}
   .head h2{font-size:26px;}
   .grid{grid-template-columns:1fr; gap:14px;}
-  .field-banner{height:240px;}
-  .field-banner-overlay p{font-size:22px;}
   .avatar-photo{width:60px; height:60px;}
   .how-row, .testi-row{flex-direction:column; gap:14px;}
   .compare-row{gap:14px;}
