@@ -100,7 +100,7 @@ svg{display:block;}
 .hero-ctas{display:flex; gap:14px; margin-bottom:36px; flex-wrap:wrap;}
 .hero-stats{display:flex; gap:28px;}
 .hero-stats div b{display:block; font-size:28px; font-weight:900; color:var(--primary);}
-.hero-stats div span{font-size:12px; color:var(--sec);}
+.hero-stats div span{font-size:13px; color:var(--sec);}
 
 .hero-visual{flex:1; position:relative; display:flex; justify-content:center; min-height:420px;}
 .blob{
@@ -157,10 +157,10 @@ svg{display:block;}
 /* ---------- Showcase ---------- */
 .showcase-row{display:flex; gap:28px; align-items:flex-start;}
 .showcase-item{flex:1; text-align:center;}
-.showcase-item .phone-frame.mini{width:100%; max-width:200px; height:300px; margin:0 auto 20px;}
+.showcase-item .phone-frame.mini{width:100%; max-width:240px; height:340px; margin:0 auto 22px;}
 .showcase-item .phone-frame.mini .app-screen{padding:12px 10px; gap:8px;}
-.showcase-item h4{font-size:17px; font-weight:800; margin-bottom:6px;}
-.showcase-item p{font-size:12.5px; color:var(--sec); max-width:220px; margin:0 auto;}
+.showcase-item h4{font-size:19px; font-weight:800; margin-bottom:6px;}
+.showcase-item p{font-size:14px; color:var(--sec); max-width:260px; margin:0 auto;}
 
 /* ---------- Stats strip ---------- */
 .stats-strip{
@@ -170,7 +170,7 @@ svg{display:block;}
 .stats-row{display:flex; justify-content:space-between; gap:24px;}
 .stat{flex:1; text-align:center; color:var(--white);}
 .stat-num{display:block; font-size:48px; font-weight:900; letter-spacing:-.5px; margin-bottom:6px;}
-.stat span{font-size:12px; opacity:.88; line-height:1.4; display:block;}
+.stat span{font-size:14px; opacity:.88; line-height:1.4; display:block;}
 
 /* ---------- Comparison (antes / con Gethics) — tarjetas 3D ---------- */
 .compare-row{display:flex; gap:36px; margin-top:48px; perspective:1400px;}
@@ -235,8 +235,8 @@ section{padding:84px 0;}
 .icon-circle svg{width:24px; height:24px;}
 .icon-circle-lg{width:64px; height:64px;}
 .icon-circle-lg svg{width:28px; height:28px;}
-.card h3{font-size:18px; font-weight:800; margin-bottom:8px;}
-.card p{font-size:13px; color:var(--sec); line-height:1.5;}
+.card h3{font-size:19px; font-weight:800; margin-bottom:8px;}
+.card p{font-size:14.5px; color:var(--sec); line-height:1.5;}
 
 /* ---------- Segmentos ---------- */
 .segments-row{display:flex; gap:28px;}
@@ -255,7 +255,7 @@ section{padding:84px 0;}
 .segment-card h3{font-size:22px; font-weight:900; margin-bottom:10px;}
 .segment-card > p{font-size:14px; color:var(--sec); line-height:1.6; margin-bottom:20px;}
 .segment-list{list-style:none; display:flex; flex-direction:column; gap:8px;}
-.segment-list li{font-size:13.5px; padding-left:22px; position:relative; color:var(--dark);}
+.segment-list li{font-size:14.5px; padding-left:22px; position:relative; color:var(--dark);}
 .segment-list li::before{content:"✓"; position:absolute; left:0; color:var(--primary); font-weight:700;}
 
 /* ---------- Problema validado ---------- */
@@ -268,14 +268,15 @@ section{padding:84px 0;}
 
 /* ---------- Como funciona ---------- */
 .how-row{display:flex; gap:20px;}
-.how-card{flex:1; background:var(--cream); border-radius:22px; padding:26px; text-align:center; transition:transform .3s var(--ease);}
+.how-card{flex:1; background:var(--cream); border-radius:22px; padding:30px 24px; text-align:center; transition:transform .3s var(--ease);}
 .how-card:hover{transform:translateY(-6px);}
 .how-num{
-  width:40px; height:40px; border-radius:50%; background:var(--primary); color:var(--white);
-  display:flex; align-items:center; justify-content:center; font-weight:700; margin:0 auto 14px;
+  width:48px; height:48px; border-radius:50%; background:var(--primary); color:var(--white);
+  display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; margin:0 auto 16px;
+  box-shadow:0 6px 14px rgba(114,42,46,.25);
 }
-.how-card h4{font-size:16px; font-weight:800; margin-bottom:6px;}
-.how-card p{font-size:12.5px; color:var(--sec);}
+.how-card h4{font-size:18px; font-weight:800; margin-bottom:6px;}
+.how-card p{font-size:14px; color:var(--sec);}
 
 /* ---------- Modelo de negocio ---------- */
 .model-row{display:flex; gap:28px;}
@@ -291,7 +292,7 @@ section{padding:84px 0;}
 /* ---------- Equipo ---------- */
 .team-row{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
 .team-card{
-  display:flex; flex-direction:column; align-items:center; gap:12px; width:160px;
+  display:flex; flex-direction:column; align-items:center; gap:14px; width:190px;
   background:var(--cream); border-radius:20px; padding:24px 14px; transition:transform .3s var(--ease);
 }
 .team-card:hover{transform:translateY(-6px);}
@@ -300,10 +301,10 @@ section{padding:84px 0;}
   display:flex; align-items:center; justify-content:center; font-weight:700; font-size:16px;
 }
 .avatar-photo{
-  width:72px; height:72px; border-radius:50%; object-fit:cover;
+  width:96px; height:96px; border-radius:50%; object-fit:cover;
   border:3px solid var(--white); box-shadow:0 6px 16px rgba(114,42,46,.15);
 }
-.team-card span{font-size:12.5px; text-align:center; font-weight:500; line-height:1.4;}
+.team-card span{font-size:14px; text-align:center; font-weight:500; line-height:1.4;}
 
 /* ---------- CTA final ---------- */
 .cta-section{padding:0 0 90px;}
@@ -368,7 +369,7 @@ footer{padding:56px 0 40px; background:var(--white);}
   section{padding:56px 0;}
   .head h2{font-size:26px;}
   .grid{grid-template-columns:1fr; gap:14px;}
-  .avatar-photo{width:60px; height:60px;}
+  .avatar-photo{width:80px; height:80px;}
   .how-row, .testi-row{flex-direction:column; gap:14px;}
   .compare-row{gap:28px;}
   .compare-card::before{transform:translate(5px,6px) rotate(.8deg);}
