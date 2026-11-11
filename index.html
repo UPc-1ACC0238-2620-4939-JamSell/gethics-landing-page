@@ -41,16 +41,22 @@
 <main id="top">
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="hero-card reveal">
-        <div class="hero-text">
+      <div class="hero-inner">
+        <div class="hero-text reveal">
           <span class="eyebrow">Gestión ganadera digital</span>
           <h1>Salud y manejo de tu ganado, en <span class="accent">un solo lugar</span></h1>
           <p>Gethics digitaliza el registro de animales, el calendario sanitario y las alertas de tu hato desde el celular — incluso sin conexión a internet.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#descargar">Descargar app</a>
-            <a class="btn btn-outline" href="#funcionalidades">Ver funcionalidades</a>
+            <a class="btn btn-ghost" href="#funcionalidades">Ver funcionalidades</a>
           </div>
+          <ul class="hero-trust">
+            <li>Funciona sin conexión</li>
+            <li>Para ganaderos y veterinarios</li>
+            <li>Validado con productores de Junín</li>
+          </ul>
           <div class="hero-stats">
             <div><b>100%</b><span>Offline</span></div>
             <div><b>24/7</b><span>Monitoreo</span></div>
@@ -330,7 +336,7 @@
   <section id="como-funciona" class="section-alt">
     <div class="wrap">
       <div class="head reveal"><span class="kicker">Proceso</span><h2>Cómo funciona</h2></div>
-      <div class="how-row">
+      <div class="how-row steps">
         <div class="how-card reveal"><div class="how-num">1</div><h4>Crea tu cuenta</h4><p>Ganadero, veterinario o técnico.</p></div>
         <div class="how-card reveal"><div class="how-num">2</div><h4>Registra tu hato</h4><p>Agrega cada animal.</p></div>
         <div class="how-card reveal"><div class="how-num">3</div><h4>Haz seguimiento</h4><p>Chequeos y signos vitales.</p></div>
@@ -356,13 +362,13 @@
           <p>Suscripción in-app con planes ajustados al tamaño de tu hato, desde pequeños productores hasta operaciones más grandes.</p>
           <a class="btn btn-outline" href="#descargar">Descargar app</a>
         </div>
-        <div class="model-card reveal">
+        <div class="model-card model-card-dark reveal">
           <div class="icon-circle icon-circle-lg" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
           </div>
           <h3>Para instituciones</h3>
           <p>Licencias institucionales para asociaciones ganaderas y entidades del sector agropecuario que quieran llevar Gethics a sus comunidades.</p>
-          <a class="btn btn-outline" href="#contacto">Conversemos</a>
+          <a class="btn btn-white" href="#contacto">Conversemos</a>
         </div>
       </div>
       <p class="research-note reveal">Los montos específicos de cada plan están en definición junto con las entrevistas de validación.</p>
@@ -390,8 +396,15 @@
   <section id="descargar" class="cta-section">
     <div class="wrap">
       <div class="cta-final reveal">
-        <h2>Empieza a gestionar la salud de tu ganado hoy</h2>
-        <a class="btn btn-primary" href="#top">Descargar app</a>
+        <img src="assets/gethics-logo.png" alt="" class="cta-logo">
+        <div class="cta-copy">
+          <h2>Empieza a gestionar la salud de tu ganado hoy</h2>
+          <p>Registra tu hato, programa vacunas y recibe alertas desde tu celular, incluso sin señal.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-white" href="#top">Descargar app</a>
+          <a class="btn btn-ghost" href="#contacto">Conversemos</a>
+        </div>
       </div>
     </div>
   </section>
@@ -422,6 +435,10 @@
       <a href="https://github.com/UPc-1ACC0238-2620-4939-JamSell/gethics-mobile-app" target="_blank" rel="noopener">App móvil</a>
       <a href="https://github.com/UPc-1ACC0238-2620-4939-JamSell/gethics-backend" target="_blank" rel="noopener">Backend</a>
     </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 JamSell · Gethics</span>
+    <span>Proyecto académico — Universidad Peruana de Ciencias Aplicadas</span>
   </div>
 </footer>
 
