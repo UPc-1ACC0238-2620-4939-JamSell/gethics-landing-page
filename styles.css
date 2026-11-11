@@ -63,10 +63,12 @@ svg{display:block;}
   box-shadow:0 4px 24px rgba(114,42,46,.08);
 }
 .site-header .wrap{max-width:none; width:100%;}
-.nav{display:flex; align-items:center; justify-content:space-between; padding:22px 56px; gap:32px;}
-.logo{font-weight:800; font-size:19px; color:#fff; text-decoration:none; display:flex; align-items:center; gap:10px; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:18px 56px; gap:32px; transition:padding .3s ease;}
+.scrolled .nav{padding:10px 56px;}
+.logo{font-weight:900; font-size:26px; letter-spacing:1px; color:#fff; text-decoration:none; display:flex; align-items:center; gap:14px; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
 .scrolled .logo{color:var(--primary); text-shadow:none;}
-.logo-mark{width:32px; height:32px; object-fit:contain; border-radius:7px;}
+.logo-mark{width:60px; height:60px; object-fit:cover; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.25); transition:width .3s ease, height .3s ease;}
+.scrolled .logo-mark{width:48px; height:48px; box-shadow:0 4px 12px rgba(114,42,46,.2);}
 .navlinks{display:flex; flex:1; justify-content:space-evenly; gap:16px; margin:0 48px; font-weight:600; font-size:16px;}
 .navlinks a{text-decoration:none; position:relative; padding:4px 0; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.25); transition:color .3s ease;}
 .scrolled .navlinks a{color:var(--dark); text-shadow:none;}
@@ -80,7 +82,7 @@ svg{display:block;}
 
 /* ---------- Hero ---------- */
 .hero{
-  padding:130px 0 120px;
+  padding:150px 0 120px;
   background-image:url('assets/hato-paisaje.jpg');
   background-size:cover;
   background-position:center 65%;
@@ -318,7 +320,7 @@ footer{padding:56px 0 40px; background:var(--white);}
 .foot-grid a{display:block; padding:4px 0; text-decoration:none;}
 .foot-grid a:hover{color:var(--primary);}
 .foot-brand p{max-width:220px; margin-top:8px;}
-.foot-brand .logo-mark{width:34px; height:34px; margin-bottom:6px;}
+.foot-brand .logo-mark{width:84px; height:84px; margin-bottom:10px; border-radius:18px; box-shadow:0 6px 16px rgba(114,42,46,.18);}
 
 /* =================== Responsive =================== */
 @media (max-width: 960px){
@@ -333,9 +335,13 @@ footer{padding:56px 0 40px; background:var(--white);}
 
 @media (max-width: 768px){
   .wrap{padding:0 20px;}
-  .nav{padding:16px 20px;}
+  .nav{padding:12px 20px;}
+  .scrolled .nav{padding:8px 20px;}
+  .logo{font-size:21px; gap:10px;}
+  .logo-mark{width:46px; height:46px; border-radius:11px;}
+  .scrolled .logo-mark{width:40px; height:40px;}
   .navlinks{
-    position:fixed; inset:60px 0 auto 0; background:var(--white);
+    position:fixed; inset:70px 0 auto 0; background:var(--white);
     flex-direction:column; align-items:flex-start; gap:0; padding:8px 20px 16px;
     box-shadow:0 12px 24px rgba(0,0,0,.08);
     transform:translateY(-12px); opacity:0; pointer-events:none; transition:all .18s ease;
@@ -345,7 +351,7 @@ footer{padding:56px 0 40px; background:var(--white);}
   .nav-cta{display:none;}
   .menu-toggle{display:flex;}
 
-  .hero{padding:96px 0 64px; background-position:center 78%;}
+  .hero{padding:104px 0 64px; background-position:center 78%;}
   .hero-card{flex-direction:column; padding:32px 24px; border-radius:28px; gap:24px;}
   .hero-text h1{font-size:32px; letter-spacing:-.3px;}
   .hero-text p{font-size:14px; max-width:none;}
